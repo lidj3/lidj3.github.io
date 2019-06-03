@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lidj3.github.io/"/>
-  <updated>2019-06-03T06:19:46.040Z</updated>
+  <updated>2019-06-03T09:24:14.261Z</updated>
   <id>https://lidj3.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://lidj3.github.io/2019/06/03/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E5%88%97%E8%A1%A8%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/"/>
+    <id>https://lidj3.github.io/2019/06/03/字符串和列表的使用方法/</id>
+    <published>2019-06-03T09:24:14.261Z</published>
+    <updated>2019-06-03T09:24:14.261Z</updated>
+    
+    <content type="html"><![CDATA[<p>字符串</p><p>.count<br>返回某个字符出现的次数。</p><blockquote><blockquote><blockquote><p>a‘asdfghjklasdgha’<br>a.count(“a”)<br>3</p></blockquote></blockquote></blockquote><p>.startswith<br>判断字符串以什么开头，是返回True,否返回False</p><blockquote><blockquote><blockquote><p>a‘asdfghjklasdgha’<br>a.startswith(‘a’)<br>True<br>a.startswith(‘b’)<br>False</p></blockquote></blockquote></blockquote><p>.endswith<br>判断字符串以什么结尾，是返回True,否返回False</p><blockquote><blockquote><blockquote><p>a‘asdfghjklasdgha’<br>a.endswith(‘a’)<br>True<br>a.endswith(‘b’)<br>False</p></blockquote></blockquote></blockquote><p>.find<br>检测字符串中是否包含子字符串，如果指定 beg（开始） 和 end（结束） 范围，则检查是否包含在指定范围内，如果包含子字符串返回开始的索引值，否则返回-1。</p><blockquote><blockquote><blockquote><p>a‘asdfghjklasdgha’<br>a.find(‘hjk’)<br>5a.find(‘hjk’,6)<br>-1</p></blockquote></blockquote></blockquote><p>.format<br>字符串格式化</p><blockquote><blockquote><blockquote><p>a‘asdfghjklasdgha’<br>‘test is {}’.format(a)<br>‘test is asdfghjklasdgha’<br>‘test is {} {}’.format(a,’test’)<br>‘test is asdfghjklasdgha test’</p></blockquote></blockquote></blockquote><p>.index<br>检测字符串中是否包含子字符串，如果指定 beg（开始） 和 end（结束） 范围，则检查是否包含在指定范围内，如果包含子字符串返回开始的索引值，否则抛出异常。</p><blockquote><blockquote><blockquote><p>a‘asdfghjklasdgha’<br>a.index(‘hjk’)<br>5a.index(‘hjk’,6)<br>Traceback (most recent call last):<br>  File “<stdin>“, line 1, in <module><br>ValueError: substring not found<br>a.index(‘ajk’)<br>Traceback (most recent call last):<br>  File “<stdin>“, line 1, in <module><br>ValueError: substring not found</module></stdin></module></stdin></p></blockquote></blockquote></blockquote><p>.isdigit<br>检测字符串是否只由数字组成。</p><blockquote><blockquote><blockquote><p>a‘asdfghjklasdgha’<br>b‘12345’<br>a.isdigit()<br>False<br>b.isdigit()<br>True</p></blockquote></blockquote></blockquote><p>.islower<br>检测字符串是否由小写字母组成。</p><blockquote><blockquote><blockquote><p>a‘asdfghjklasdgha’<br>b‘Asdfghjklasdgha’<br>a.islower()<br>True<br>b.islower()<br>False</p></blockquote></blockquote></blockquote><p>.isupper<br>检测字符串中所有的字母是否都为大写。</p><blockquote><blockquote><blockquote><p>a‘asdfghjklasdgha’<br>b‘Asdfghjklasdgha’<br>c‘ASDFGHJKLASDGHA’<br>a.isupper()<br>False<br>b.isupper()<br>False<br>c.isupper()<br>True</p></blockquote></blockquote></blockquote><p>.join<br>将序列中的元素以指定的字符连接生成一个新的字符串</p><blockquote><blockquote><blockquote><p>test = “-“<br>d‘abc’<br>test.join(d)<br>‘a-b-c’</p></blockquote></blockquote></blockquote><p>.ljust<br>返回一个原字符串左对齐,并使用空格填充至指定长度的新字符串。如果指定的长度小于原字符串的长度则返回原字符串。</p><blockquote><blockquote><blockquote><p>a‘asdfghjklasdgha’<br>a.ljust(30)<br>‘asdfghjklasdgha               ‘<br>a.ljust(30,”#”)<br>‘asdfghjklasdgha###############’</p></blockquote></blockquote></blockquote><p>.lower<br>转换字符串中所有大写字符为小写。</p><blockquote><blockquote><blockquote><p>c‘ASDFGHJKLASDGHA’<br>c.lower()<br>‘asdfghjklasdgha’</p></blockquote></blockquote></blockquote><p>.lstrip<br>用于截掉字符串左边的空格或指定字符。</p><blockquote><blockquote><blockquote><p>test<br>‘  abc        ‘<br>test.lstrip()<br>‘abc        ‘<br>test = “####abc####”<br>test.lstrip(“#”)<br>‘abc####’</p></blockquote></blockquote></blockquote><p>.replace<br>把字符串中的 old（旧字符串） 替换成 new(新字符串)，如果指定第三个参数max，则替换不超过 max 次。</p><blockquote><blockquote><blockquote><p>a‘asdfghjklasdgha’<br>a.replace(“a”,”test”)<br>‘testsdfghjkltestsdghtest’<br>a.replace(“a”,”test”,2)<br>‘testsdfghjkltestsdgha’</p></blockquote></blockquote></blockquote><p>.rjust<br>返回一个原字符串右对齐,并使用空格填充至长度 width 的新字符串。如果指定的长度小于字符串的长度则返回原字符串。</p><blockquote><blockquote><blockquote><p>a‘asdfghjklasdgha’<br>a.rjust(30)<br>‘               asdfghjklasdgha’<br>a.rjust(30,”#”)<br>‘###############asdfghjklasdgha’</p></blockquote></blockquote></blockquote><p>.split<br>通过指定分隔符对字符串进行切片，如果参数 num 有指定值，则分隔 num+1 个子字符串。</p><blockquote><blockquote><blockquote><p>test<br>‘abc bcd cde’<br>test.split()<br>[‘abc’, ‘bcd’, ‘cde’]<br>test.split(“ “)<br>[‘abc’, ‘bcd’, ‘cde’]<br>test.split(“ “,1)<br>[‘abc’, ‘bcd cde’]</p></blockquote></blockquote></blockquote><p>.strip<br>用于移除字符串头尾指定的字符（默认为空格或换行符）或字符序列。<br>注意：该方法只能删除开头或是结尾的字符，不能删除中间部分的字符。</p><blockquote><blockquote><blockquote><p>test<br>‘#########abc#############’<br>test.strip(“#”)<br>‘abc’</p></blockquote></blockquote></blockquote><p>.upper<br>将字符串中的小写字母转为大写字母。</p><blockquote><blockquote><blockquote><p>a‘asdfghjklasdgha’<br>a.upper()<br>‘ASDFGHJKLASDGHA’</p></blockquote></blockquote></blockquote><p>列表</p><p>.append<br>在列表末尾添加新的对象。</p><blockquote><blockquote><blockquote><p>a[‘abc’, ‘abc’, ‘bcd’, ‘test’]<br>a.append(“123”)<br>a[‘abc’, ‘abc’, ‘bcd’, ‘test’, ‘123’]</p></blockquote></blockquote></blockquote><p>.count<br>返回字符串出现的次数</p><blockquote><blockquote><blockquote><p>a[‘test’, ‘abc’, ‘abc’, ‘bcd’]<br>a.count(‘abc’)<br>2</p></blockquote></blockquote></blockquote><p>.extend<br>在列表末尾一次性追加另一个序列中的多个值。</p><blockquote><blockquote><blockquote><p>a = [“abc”,”cde”]<br>b = [“123”,567]<br>a.extend(b)<br>a[‘abc’, ‘cde’, ‘123’, 567]</p></blockquote></blockquote></blockquote><p>.index<br>返回从左开始匹配到的第一个字符串的索引</p><blockquote><blockquote><blockquote><p>a[‘test’, ‘abc’, ‘abc’, ‘bcd’]<br>a.index(‘abc’)<br>1</p></blockquote></blockquote></blockquote><p>.insert<br>用于将指定对象插入列表的指定位置。</p><blockquote><blockquote><blockquote><p>a[‘abc’, ‘abc’]<br>a.insert(1,”bcd”)<br>a[‘abc’, ‘bcd’, ‘abc’]</p></blockquote></blockquote></blockquote><p>.pop<br>移除列表中的一个元素（默认最后一个元素），并且返回该元素的值。</p><blockquote><blockquote><blockquote><p>a[‘test’, ‘abc’, ‘abc’, ‘bcd’]<br>a.pop()<br>‘bcd’<br>a[‘test’, ‘abc’, ‘abc’]<br>a.pop(0)<br>‘test’<br>a[‘abc’, ‘abc’]</p></blockquote></blockquote></blockquote><p>.remove<br>用于移除列表中某个值的第一个匹配项。</p><blockquote><blockquote><blockquote><p>a[‘abc’, ‘bcd’, 567, ‘123’, ‘abc’]<br>a.remove(“abc”)<br>a[‘bcd’, 567, ‘123’, ‘abc’]</p></blockquote></blockquote></blockquote><p>.reverse<br>用于反向列表中元素。</p><blockquote><blockquote><blockquote><p>a[‘bcd’, 567, ‘123’, ‘abc’]<br>a.reverse()<br>a[‘abc’, ‘123’, 567, ‘bcd’]</p></blockquote></blockquote></blockquote><p>.sort<br>对原列表进行排序</p><blockquote><blockquote><blockquote><p>a[‘test’, ‘abc’, ‘abc’, ‘bcd’]<br>a.sort()<br>a[‘abc’, ‘abc’, ‘bcd’, ‘test’]</p></blockquote></blockquote></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;字符串&lt;/p&gt;
+&lt;p&gt;.count&lt;br&gt;返回某个字符出现的次数。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a
+‘asdfghjklasdgha’&lt;br&gt;a.count(“a”)&lt;br&gt;3&lt;/p&gt;
+&lt;/blockquote
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
