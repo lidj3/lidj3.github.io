@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://ldj.github.io/"/>
   <updated>2019-06-03T06:19:46.040Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://ldj.github.io/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2019/06/03/hello-world/"/>
-    <id>http://yoursite.com/2019/06/03/hello-world/</id>
+    <link href="https://ldj.github.io/2019/06/03/hello-world/"/>
+    <id>https://ldj.github.io/2019/06/03/hello-world/</id>
     <published>2019-06-03T06:19:46.040Z</published>
     <updated>2019-06-03T06:19:46.040Z</updated>
     
